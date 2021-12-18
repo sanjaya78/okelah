@@ -6,28 +6,28 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run && curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && %cd ~/.config/code-server && mv config.yaml llod && wget https://raw.githubusercontent.com/caroberkah/codevs/main/config.yaml && npm install -g localtunnel && code-server --bind-addr 127.0.0.1:8040  & lt --port 8040
+            command: curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run && curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && %cd ~/.config/code-server && mv config.yaml llod && wget https://raw.githubusercontent.com/caroberkah/codevs/main/config.yaml && npm install -g localtunnel && code-server --bind-addr 127.0.0.1:8040   --port 8040
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run && curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && %cd ~/.config/code-server && mv config.yaml llod && wget https://raw.githubusercontent.com/caroberkah/codevs/main/config.yaml && npm install -g localtunnel && code-server --bind-addr 127.0.0.1:8040  & lt --port 8040
+            command: curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run && curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && %cd ~/.config/code-server && mv config.yaml llod && wget https://raw.githubusercontent.com/caroberkah/codevs/main/config.yaml && npm install -g localtunnel && code-server --bind-addr 127.0.0.1:8040   --port 8040
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run && curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && %cd ~/.config/code-server && mv config.yaml llod && wget https://raw.githubusercontent.com/caroberkah/codevs/main/config.yaml && npm install -g localtunnel && code-server --bind-addr 127.0.0.1:8040  & lt --port 8040
+            command: curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run && curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && %cd ~/.config/code-server && mv config.yaml llod && wget https://raw.githubusercontent.com/caroberkah/codevs/main/config.yaml && npm install -g localtunnel && code-server --bind-addr 127.0.0.1:8040   --port 8040
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
-            command: curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run && curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && %cd ~/.config/code-server && mv config.yaml llod && wget https://raw.githubusercontent.com/caroberkah/codevs/main/config.yaml && npm install -g localtunnel && code-server --bind-addr 127.0.0.1:8040  & lt --port 8040
+            command: curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run && curl -fsSL https://code-server.dev/install.sh | sh && timeout 2s code-server && %cd ~/.config/code-server && mv config.yaml llod && wget https://raw.githubusercontent.com/caroberkah/codevs/main/config.yaml && npm install -g localtunnel && code-server --bind-addr 127.0.0.1:8040   --port 8040
 workflows:
     version: 2.1
     build:
